@@ -25,3 +25,27 @@ ul {
 }
 
 
+
+/* header and navbar */
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 30px;
+    z-index: 3;
+}
+
+.logo-container {
+    width: 210px;
+    height: auto;
+}
+
+.logo-container img {
+    width: 100%;
+}
