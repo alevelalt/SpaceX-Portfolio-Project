@@ -48,4 +48,41 @@ ul {
 
 .logo-container img {
     width: 100%;
+    display: block;
+    height: auto;
+}
+
+.desktop-main-menu-navigtion {
+    margin-right: 50px;
+}
+
+.desktop-main-menu-navigtion ul {
+    display: flex;
+}
+
+.desktop-main-menu-navigtion ul li {
+    margin-right: 20px;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+
+/* animated bottom border of menu items */
+.desktop-main-menu-navigtion ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: right center;
+}
+
+.desktop-main-menu-navigtion ul li a:hover:after {
+    transform: scaleX(100%);
+    transform-origin: left center;
+    transition-duration: 0.4s;
 }
