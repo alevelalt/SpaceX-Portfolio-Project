@@ -109,13 +109,15 @@ section {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
+    max-width: 700px;
     animation: sectionInnerText 0.5s ease-in-out 0.2s;
     animation-fill-mode: both;
 }
 
 .section-inner-text h4 {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 300;
+    margin-bottom: 0px;
     animation: sectionInnerText 0.5s ease-in-out;
 }
 
@@ -131,10 +133,28 @@ section {
 
 /* Background image */
 .section-one {
-    background-image: url("../images/section-a.webp");
+    background-image: url("../images/section-1.webp");
 }
 
+.section-two {
+    background-image: url("../images/section-2.webp");
+}
 
+.section-three {
+    background-image: url("../images/section-3.webp");
+}
+
+.section-four {
+    background-image: url("../images/section-4.webp");
+}
+
+.section-five {
+    background-image: url("../images/section-5.webp");
+}
+
+.section-six {
+    background-image: url("../images/section-6.webp");
+}
 
 /* Rewatch Button */
 .button {
