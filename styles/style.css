@@ -84,7 +84,7 @@ ul {
 .desktop-main-menu-navigtion ul li a:hover:after {
     transform: scaleX(100%);
     transform-origin: left center;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
 }
 
 
@@ -109,12 +109,20 @@ section {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
+    animation: sectionInnerText 0.5s ease-in-out 0.2s;
+    animation-fill-mode: both;
 }
 
 .section-inner-text h4 {
     font-size: 25px;
     font-weight: 300;
-    margin-bottom: 5px;
+    animation: sectionInnerText 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
 }
 
 
@@ -124,3 +132,52 @@ section {
     background-image: url("../images/section-a.webp");
 }
 
+
+
+/* Rewatch Button */
+.button {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    min-width: 130px;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    position: relative;
+    font-weight: bold;
+    overflow: hidden;
+    z-index: 2;
+    animation: sectionInnerText 0.5s ease-in-out 0.4s;
+    animation-fill-mode: both;
+}
+
+.button:hover span {
+    color: #000;
+}
+
+.button .hover-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateY(100%);
+}
+
+.button:hover .hover-element {
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+
+@keyframes sectionInnerText {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
