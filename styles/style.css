@@ -123,6 +123,8 @@ section {
     position: absolute;
     bottom: 50px;
     left: 50%;
+    transform: translateX(-50%);
+    animation: arrowBounce 5s infinite;
 }
 
 
@@ -179,5 +181,21 @@ section {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes arrowBounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
