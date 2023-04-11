@@ -274,9 +274,9 @@ footer ul li a:hover {
     }
 
     .section-inner-text {
-        bottom: 300px;
+        bottom: 200px;
         left: 50px;
-        font-size: 30px;
+        font-size: 10px;
     }
 
     .logo-container {
