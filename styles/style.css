@@ -39,6 +39,7 @@ ul {
     height: 100px;
     padding: 0 30px;
     z-index: 3;
+    transition: 0.5s ease-in-out;
 }
 
 .logo-container {
@@ -364,4 +365,8 @@ footer ul li a:hover {
 
 .stop-scroll {
     overflow: hidden;
+}
+
+.hide-header {
+    transform: translateY(-100%);
 }
